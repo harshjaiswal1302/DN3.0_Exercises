@@ -1,0 +1,38 @@
+Exercise 4: Employee Management System
+
+1.Understand Array Representation:
+
+Q) Explain how arrays are represented in memory and their advantages.
+
+Ans) Arrays in Java are a collection of elements of the same data type, stored together in memory. Arrays are indexed data structures and the index starts from 0.
+ All elements of the array are retrieved using their index.
+
+Advantages: -
+Fast Access: Accessing an element through an index is real quick, O(1) time complexity.
+
+Low Memory Overhead: Arrays have a small amount of additional memory that is called overhead, since the data is stored in contiguous memory locations.
+
+Easy Traversal: Iterating over an array is straightforward and efficient.
+
+4.Analysis:
+
+Q) Analyze the time complexity of each operation (add, search, traverse, delete)
+
+Ans) Add: O(1) — Adding an employee to the array takes constant time as long as there is space in the array.
+
+Search: O(n) — In the worst case we might have to search through the whole array.
+
+Traverse: O(n) - Because we are traversing through all elements of a given array. 
+
+Delete: O(n) - In the worst-case scenario, we might have to iterate through the entire array to find an element to be deleted and then we need to shift rest of the elements. 
+
+Q) Discuss the limitations of arrays and when to use them.
+
+Ans) Fixed Size: An array's size is fixed at the time of its declaration; therefore, it cannot be modified. 
+It may lead to wastage of memory if an array is not fully occupied, and a new array is to be formed when it becomes full.
+
+Deleting and Inserting at inefficient: The process of deletion and insertion of elements in an array is inefficient, 
+particularly for middle elements as extra elements may need to be shifted.
+
+Better Alternatives: In the case of dynamic data—when the count of elements may be changed—other data structures,
+like ArrayLists or LinkedLists, or other collections, may turn out to be more appropriate.

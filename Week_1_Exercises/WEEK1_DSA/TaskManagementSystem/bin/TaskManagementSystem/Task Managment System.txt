@@ -1,0 +1,34 @@
+Exercise 5: Task Management System
+
+1.Understand Linked Lists:
+
+Q) Explain the different types of linked lists (Singly Linked List, Doubly Linked List).
+
+Ans) Singly Linked List: A singly linked list is a type of linked list in which every node points to the next node in line. 
+Each node consists of data and a reference or a pointer to the next node in the list. 
+The very first node is called the head, and the last node points to null, which means it indicates the end of the list.
+
+Doubly Linked List: A doubly linked list is a type of linked list whereby every node has an additional pointer pointing to the previous node in the sequence. 
+The nodes are thus connected both ways—forward and backward. Every node consists of data, a reference to the next node, and a reference for the previous node.
+
+4.Analysis
+
+Q) Analyze the time complexity of each operation.
+
+Ans) Add: O(n) – Adding a task to the end of the list requires traversal to the end.
+
+Search: O(n) – Searching for a task requires traversal until the task is found.
+
+Traverse: O(n) – Traversal visits each node once.
+
+Delete: O(n) – Deletion requires searching for the task and updating pointers.
+
+
+Q) Discuss the advantages of linked lists over arrays for dynamic data.
+
+Ans) Dynamic Size: Dynamic growing and shrinking of the size of linked lists removes the need for declaring a predefined size.
+
+Efficient Insertions/Deletions: Insertion or deletion of an element at the start or in the middle of the linked list is more time efficient compared to arrays 
+because elements need not be shifted.
+
+Memory Consumption: This implementation of the linked list uses dynamic data memory more efficiently because it won't waste extra memory reserved by the application.

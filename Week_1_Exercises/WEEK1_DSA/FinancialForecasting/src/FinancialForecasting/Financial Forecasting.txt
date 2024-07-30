@@ -1,0 +1,34 @@
+Exercise 7: Financial Forecasting
+
+1.Understand Recursive Algorithms:
+
+Q) Explain the concept of recursion and how it can simplify certain problems.
+
+Ans) Recursion is the technique where a function calls itself to assist in solving a problem.
+ A recursive algorithm usually presents a neat way to solve a problem that possesses a recursive structure since 
+the basic recursion in the problem may be used to determine and solve smaller subproblems of the same type.
+
+Generally, a recursive function is made up of two divisions:  The base case is understood as the condition through which the recursion stops.
+ Where it makes a call to itself is usually known as the recursive case.
+
+
+4.Analysis:
+
+Q) Discuss the time complexity of your recursive algorithm.
+
+Ans) The time complexity for this recursive algorithm will be O(n), where 'n' is the number of years. 
+This is so because the function calls itself once for each year.
+
+
+Q) Explain how to optimize the recursive solution to avoid excessive computation.
+
+Ans) Excessive computation and a potential stack overflow for large inputs can be avoided by memorizing 
+or the problem can be converted into an iterative approach.
+
+Memorization: Involves storing the expensive function calls and reusing them when the same inputs occur again. 
+Iterative Approach: Solves for the future value without recursion but with a loop.
+
+
+
+
+

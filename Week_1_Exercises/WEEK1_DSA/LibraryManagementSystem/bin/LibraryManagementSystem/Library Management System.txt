@@ -1,0 +1,26 @@
+Exercise 6: Library Management System
+1.Understand Search Algorithms:
+Q) Explain linear search and binary search algorithms.
+Ans) Linear Search: In the linear search algorithm, each element of the list is searched one after the other to check for the presence of the required element until it reaches the end of the list. 
+Time Complexity: O(n) where n is the total number of elements in the list.
+Binary Search: Binary Search This is an effective searching algorithm that requires the target list to be sorted. It's based on the principle of half splitting of the list and matching the target value with the middle element of the list, until it finds the target value.
+Time Complexity: O(log n) for n number of elements in the list.
+
+4.Analysis:
+Q) Compare the time complexity of linear and binary search
+Ans) Time Complexity
+Linear Search:
+Best Case: O(1), if the element is the first one
+Average Case: O(n)
+Worst Case: O(n)
+Binary Search:
+Best Case: O(1) if it is the middle element
+Average Case: O(log n)
+Worst Case: O(log n)
+
+Q) Discuss when to use each algorithm based on the data set size and order.
+
+Ans) Linear Search: Suitable for small datasets or if the data is not sorted. It is easier to implement and does not require that the data be sorted. 
+
+Binary Search: Suitable for large datasets where data is already sorted. Much more efficient in larger datasets due to its logarithmic time complexity. It requires data to be sorted, which adds some extra overhead, but this can hopefully be avoided if the data is already sorted or changes very infrequently.
+

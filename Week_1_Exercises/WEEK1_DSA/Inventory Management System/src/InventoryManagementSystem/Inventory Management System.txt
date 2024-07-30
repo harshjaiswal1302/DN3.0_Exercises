@@ -1,0 +1,45 @@
+Exercise 1: Inventory Management System
+1. Understand the Problem:
+Q) Explain why data structures and algorithms are essential in handling large inventories.
+
+Ans) Efficient data structures and algorithms in the handling of large inventories are important 
+because they impact the performance and scalability of a system directly. Operations such as add, 
+update, delete, and retrieve on products should be done at a very fast rate when dealing with a 
+large number of products to ensure the responsiveness of the system. Efficient data structures 
+will ensure these operations are time and space complexity-optimized; hence, there will be better performance overall.
+
+Q) Discuss the types of data structures suitable for this problem.
+Ans) Suitable Data Structures for Inventory Management are: -
+
+Array List:  Good for dynamic arrays where frequent additions and deletions are not the norm. 
+Provides constant-time access for retrieval operations but can be slow for add/delete operations due to the need for shifting elements.
+
+HashMap: Ideal for scenarios requiring fast access, insertions, and deletions. 
+Provides average constant-time complexity for these operations. Suitable for storing products where product IDs can be used as keys for quick lookup.
+
+LinkedList: Useful if the system requires frequent additions and deletions. 
+Provides constant-time complexity for these operations but can be slower for retrieval due to the need for sequential access.
+
+For this exercise, a HashMap is a suitable choice because it provides efficient performance for add, update, and delete operations, 
+which are crucial for an inventory management system.
+
+4. Analysis:
+Q) Analyze the time complexity of each operation (add, update, delete) in your chosen data structure.
+
+Ans) Time Complexity Analysis: -
+Add Product: O(1) on average due to the constant-time complexity of HashMap put operation.
+Update Product: O(1) on average for the same reason as add operation.
+Delete Product: O(1) on average due to the constant-time complexity of HashMap remove operation.
+Retrieve Product: O(1) on average due to the constant-time complexity of HashMap get operation.
+
+Q) Discuss how you can optimize these operations.
+
+Ans) Load Factor and Resizing: Ensure that the load factor of the HashMap is appropriate to minimize the need for resizing, which can be costly.
+By default, the load factor is 0.75, meaning the HashMap will resize when it is 75% full.
+
+Thread Safety: If the inventory management system is used in a multithreaded environment, consider using a Concurrent HashMap instead of a HashMap to handle concurrent modifications safely.
+
+Memory Management: Regularly check and remove outdated or unused products from the inventory to manage memory efficiently.
+
+
+
