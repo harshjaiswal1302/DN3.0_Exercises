@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import com.employeemanagementsystem.dto.EmployeeDTO;
 import com.employeemanagementsystem.entity.Employee;
 import com.employeemanagementsystem.projection.EmployeeProjection;
 
@@ -32,5 +31,5 @@ public interface EmployeeRepository extends JpaRepository<Employee,Long>{
     // Using Pageable
     @SuppressWarnings("null")
     @Query("SELECT new com.employeemanagementsystem.dto.EmployeeDTO(e.id,e.name,e.email,e.department.name) FROM Employee e")
-    Page<EmployeeDTO> findAll(Pageable pageable);
+    Page<Employee> findAll(Pageable pageable);
 }

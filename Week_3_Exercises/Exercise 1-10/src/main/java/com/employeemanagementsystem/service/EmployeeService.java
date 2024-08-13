@@ -7,14 +7,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.employeemanagementsystem.dto.EmployeeDTO;
 import com.employeemanagementsystem.entity.Employee;
 import com.employeemanagementsystem.projection.EmployeeProjection;
 import com.employeemanagementsystem.repo.EmployeeRepository;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
-import lombok.NonNull;
 
 @Service
 public class EmployeeService {
@@ -24,8 +22,7 @@ public class EmployeeService {
     @PersistenceContext
     private EntityManager entityManager;
    
-    @NonNull
-    public Page<EmployeeDTO> getAllEmployees(Pageable pageable){
+    public Page<Employee> getAllEmployees(Pageable pageable){
         return employeeRepository.findAll(pageable);
     }
     // START OF PROJECTIONS

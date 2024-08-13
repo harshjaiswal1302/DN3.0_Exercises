@@ -12,4 +12,7 @@ public class DepartmentDTO {
     private String name;
     private int employeeCount;
     private List<EmployeeDTO> employees;
+
+    public DepartmentDTO(long id, String name, int employeeCount, List<EmployeeDTO> employeeDTOs) {
+    }
 }
